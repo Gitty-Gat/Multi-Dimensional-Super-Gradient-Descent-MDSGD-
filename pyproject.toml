@@ -1,0 +1,18 @@
+[project]
+name = "mdsgd"
+version = "0.1.0"
+description = "Multi‑Dimensional Super Gradient Descent: alpha‑naut search for boosted ensembles"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "lightgbm>=4.3.0",
+    "numpy>=1.26",
+    "scikit‑learn>=1.4"
+]
+
+[project.scripts]
+mdsgd = "mdsgd.cli:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
